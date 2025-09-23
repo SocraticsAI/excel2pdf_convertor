@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "excel2pdf"
+version = "0.1.0"
+description = "Per-sheet Excel to PDF using xlwings (macOS/Windows)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "xlwings>=0.30",
+  "typer>=0.12",
+  "rich>=13",
+]
+
+[project.scripts]
+excel2pdf = "excel_to_pdf.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["excel_to_pdf*"]

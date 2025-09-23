@@ -1,0 +1,43 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Build artifacts
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Editors/OS
+.vscode/
+.idea/
+.DS_Store
+
+# UV (keep lockfile tracked)
+.uv/
+# uv.lock  # <- keep tracked; comment-in to ignore if you prefer
+
+# --- Project outputs & local data ---
+# Output folders created by the tool
+pdf-out/
+*_PDFs/
+
+# Generated PDFs (if you *do* want PDFs under docs/, unignore with `!docs/**/*.pdf`)
+*.pdf
+
+# Source spreadsheets (keep these private by default)
+*.xlsx
+*.xlsm
+*.xlsb
+*.xls
+
+# Misc
+*.log
+tmp/
+temp/
